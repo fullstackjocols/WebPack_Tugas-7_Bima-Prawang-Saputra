@@ -1,0 +1,32 @@
+# Dependency directories
+node_modules/
+# dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Webpack-specific
+.bundle/
+.cache/
+webpack-stats.json
+
+# IDE-specific
+.vscode/
+.idea/
+*.swp
+
+# Ignore package-lock and yarn.lock if you prefer to generate fresh ones
+# package-lock.json
+# yarn.lock
+
+# Ignore production builds
+build/

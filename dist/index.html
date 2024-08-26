@@ -1,0 +1,67 @@
+<!-- dist/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Main Section -->
+    <section class="BMI">
+      <!-- Content as before -->
+      <div>
+        <div class="mx-auto container p-5 md:p-10 my-16">
+          <!-- Flex Container -->
+          <div
+            class="lg:flex text-center justify-center space-y-10 lg:space-y-0 lg:space-x-4"
+          >
+            <!-- BMI Calculator -->
+            <div
+              id="bmi-calculator"
+              class="max-w-md lg:max-w-lg shadow-lg p-6 border rounded-lg"
+            >
+              <input
+                id="weight"
+                type="text"
+                placeholder="Weight (kg)"
+                class="p-2 border border-gray-300 rounded mb-4 w-full focus:outline-none"
+              />
+              <input
+                id="height"
+                type="text"
+                placeholder="Height (m)"
+                class="p-2 border border-gray-300 rounded mb-4 w-full focus:outline-none"
+              />
+              <!-- Buttons -->
+              <div>
+                <button
+                  id="calculate-btn"
+                  class="bg-blue-500 text-white p-2 rounded hover:opacity-90"
+                >
+                  Calculate BMI
+                </button>
+                <button
+                  id="reset-btn"
+                  class="bg-red-500 text-white p-2 rounded hover:opacity-90 hidden"
+                >
+                  Reset BMI
+                </button>
+              </div>
+            </div>
+            <!-- Result Display -->
+            <div
+              id="bmi-result"
+              class="w-full hidden lg:shadow-lg rounded-lg p-6"
+            >
+              <div id="result" class="result"></div>
+              <p id="description" class="description"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="bundle.js"></script>
+  </body>
+</html>
